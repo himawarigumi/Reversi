@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))'></script>
+    <script type='text/javascript' src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.easing.min.js"))'></script>
+    <script type="text/javascript" src="@routes.Assets.at("javascripts/Reversi.js")" ></script>
+
+
+</head>
+
+<body>
+    <h1>オセロ</h1>
+    <div style="display:none">
+        <div id="cell" style="position:relative;width:65px;height:65px;background-color:#000">
+            <div style="position:relabive;top:1px;left:1px;width:63px;height:63px;background-color:#00ee00">
+            </div>
+        </div>
+
+        <div id="img-black" class="reversi"><img src="@routes.Assets.at("images/black.png")" width="64px" height="64px"></div>
+        <div id="img-white" class="reversi"><img src="@routes.Assets.at("images/white.png")" width="64px" height="64px"></div>
+    </div>
+
+</body>
+
+
+</html>
